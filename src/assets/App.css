@@ -1,0 +1,37 @@
+.conteudo {
+  display: flex;
+  min-height: 100vh;
+}
+
+.conteudo-principal {
+  flex-grow: 3;
+}
+
+:root {
+  --primaria: #373c47;
+  --secundaria: #8a8b8f;
+  --secundaria-ativa: #cccccc;
+  --fundo: #71b5ca;
+  --fundo-detalhes: #ffffff;
+  --fundo-body: linear-gradient(165deg, rgba(132, 234, 255, 1) 0%, rgba(174, 180, 255, 1) 53%, rgba(255, 204, 174, 1) 90%);
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(132, 234, 255);
+  background: var(--fundo-body);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--fundo);
+  border-radius: 20px;
+  border: none;
+}
